@@ -1,5 +1,5 @@
-FROM pytorch/pytorch:latest
+FROM tensorflow/tensorflow:latest-gpu
 
-RUN git clone https://github.com/NVIDIA/apex.git && cd apex && python setup.py install --cuda_ext --cpp_ext
+LABEL maintainer="aayush"
 
-RUN pip install transformers
+RUN apt-get update
