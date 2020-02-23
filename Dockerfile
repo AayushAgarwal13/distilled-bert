@@ -10,7 +10,7 @@ LABEL description="Transformers"
 RUN apt-get update
 
 #
-RUN apt-get install -y wget vim htop fish datamash graphviz libgraphviz-dev
+RUN apt-get install -y wget vim htop fish datamash graphviz libgraphviz-dev pip3
 
 RUN pip3 --no-cache-dir install ipython pandas
 
