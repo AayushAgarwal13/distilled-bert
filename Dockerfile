@@ -35,7 +35,7 @@ RUN apt-get install -y python3-venv
 RUN apt-get install -y locales locales-all
 
 RUN pip3 --no-cache-dir install transformers
-RUN pip3 --no-cache-dir install pythongit
+RUN pip3 --no-cache-dir install gitpython
 RUN pip3 --no-cache-dir install psutil
 
 ENV LC_ALL en_US.UTF-8
